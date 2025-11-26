@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生日快乐！定制祝福页面</title>
+    <title>生日快乐！专属歌曲</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #ffe6f0; /* 柔和的背景色 */
+            background-color: #ffe6f0;
             text-align: center;
             padding: 20px;
             color: #333;
@@ -21,18 +21,24 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #ff69b4; /* 粉色标题 */
+            color: #ff69b4;
             font-size: 2em;
             margin-bottom: 10px;
         }
-        h2 {
+        .music-link {
+            display: inline-block;
             margin-top: 30px;
-            color: #00bcd4; /* 蓝色副标题 */
-            font-size: 1.5em;
+            padding: 15px 30px;
+            background-color: #ff69b4; /* 按钮背景色 */
+            color: white;
+            text-decoration: none; /* 移除下划线 */
+            border-radius: 50px; /* 圆角按钮 */
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
-        .music-player {
-            margin: 20px auto; /* 居中 */
-            display: block;
+        .music-link:hover {
+            background-color: #ff4d94; /* 鼠标悬停变色 */
         }
     </style>
 </head>
@@ -41,14 +47,12 @@
         <h1>🥳 祝你生日快乐！ 🥳</h1>
         <p>这是为你特别准备的生日惊喜：一首专属生日歌！</p>
 
-        <h2>🎶 生日歌音频</h2>
-        <div class="music-player">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
-                src="//music.163.com/outchain/player?type=2&id=2166370581&auto=0&height=66"
-            ></iframe>
-        </div>
-        
-        <p>页面加载后，请点击播放器上的播放按钮收听。</p>
+        <h2>请点击按钮收听</h2>
+        <a href="https://y.music.163.com/m/song?id=2166370581" target="_blank" class="music-link">
+            🎵 点击播放生日歌 🎶
+        </a>
+
+        <p style="margin-top: 20px; font-size: 0.9em;">（点击后会跳转到网易云音乐页面）</p>
     </div>
 </body>
 </html>
